@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+body{
+    margin: 0;
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 212, 169);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_container{
+    display: flex;
+    border-radius: 20px;
+    width: 70vw;
+    box-shadow: -10px 10px 30px 10px rgb(57, 57, 57);
+    background-color: #fff;
+    column-gap: 2vw;
+}
+
+.calc_cont{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 1.5vh 2vw;
+
+}
+
+.result_cont{
+    width: 50%;
+    background-color: rgb(51, 51, 88);
+    border-radius: 0 20px 20px 50px;
+}
+
+.title_cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mortage_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+
+}
+.clear_btn{
+    border: none;
+    background-color: transparent;
+    text-decoration:underline;
+    color: rgb(118, 118, 118);
+}
+
+.input_cont{
+    border: 1px solid black;
+    border-radius: 7px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 5vh;
+    background-color: #E3F4FC;
+}
+
+.input_img{
+    height: 100%;
+    border-radius: 7px 0 0 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 10%; 
+    color: #4D6571;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.mortage_input{
+    width: 100%;
+    border: none;
+    border-radius: 0 7px 7px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.year_and_interest_cont{
+    display: flex;
+    column-gap: 1.5vw;
+}
+
+.reverse_input_img{
+    height: 100%;
+    border-radius: 0 7px 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 10%; 
+    color: #4D6571;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.reverse_mortage_input{
+    width: 100%;
+    border: none;
+    border-radius: 7px 0 0 7px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.calculate_btn{
+    border: none;
+    background-color: #DBDA30;
+    color: #122B25;
+    border-radius: 10px;
+    width: 50%;
+    height: 4vh;
+    font-size: 1rem;
+    align-self: center;
+}
