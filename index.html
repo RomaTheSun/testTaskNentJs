@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <script src="script .js"></script>
     <div class="background">
         <div class="main_container">
             <div class="calc_cont">
@@ -17,9 +16,7 @@
                     <div class="title">
                         Mortgage Calculator
                     </div>
-                    <button class="clear_btn">
-                        Clear All
-                    </button>
+                    <input type="reset" value="Clear All" onclick="resetCalculator()" class="clear_btn">
                 </div>
                 <div class="mortage_cont">
                     <div class="lable">
@@ -27,7 +24,7 @@
                     </div>
                     <div class="input_cont">
                         <div class="input_img">$</div>
-                        <input class="mortage_input" type="number" />
+                        <input class="mortage_input" type="number" id="mortageAmount" />
                     </div>
                 </div>
                 <div class="year_and_interest_cont">
@@ -36,7 +33,7 @@
                             Mortage Term
                         </div>
                         <div class="input_cont">
-                            <input class="reverse_mortage_input" type="number" />
+                            <input class="reverse_mortage_input" type="number" id="mortageTerm" />
                             <div class="reverse_input_img">years</div>
 
                         </div>
@@ -46,20 +43,30 @@
                             Interest Rate
                         </div>
                         <div class="input_cont">
-                            <input class="reverse_mortage_input" type="number" />
+                            <input class="reverse_mortage_input" type="number" id="interestRate" step="0.01" />
                             <div class="reverse_input_img">%</div>
 
                         </div>
                     </div>
                 </div>
-                <button class="calculate_btn">Clalculate</button>
+                <button class="calculate_btn" onclick="calculateMortgage()">Clalculate</button>
             </div>
             <div class="result_cont">
-
+                <div class="title white">
+                    Your results
+                </div>
+                <div class="repayments_sum_cont">
+                    <div class="lable white">
+                        Your mounthly repayments
+                    </div>
+                    <div id="sum">
+                        $ 0
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+    <script src="script .js"></script>
 </body>
 
 </html>
