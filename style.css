@@ -1,13 +1,16 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 *:focus {
     outline: none;
 }
-body{
+
+body {
     margin: 0;
 }
-.background{
+
+.background {
     width: 100vw;
     height: 100vh;
     background-color: rgb(255, 212, 169);
@@ -15,7 +18,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.main_container{
+
+.main_container {
     display: flex;
     border-radius: 20px;
     width: 70vw;
@@ -24,7 +28,7 @@ body{
     column-gap: 2vw;
 }
 
-.calc_cont{
+.calc_cont {
     width: 50%;
     height: 100%;
     display: flex;
@@ -34,7 +38,7 @@ body{
 
 }
 
-.result_cont{
+.result_cont {
     width: 50%;
     background-color: rgb(51, 51, 88);
     border-radius: 0 20px 20px 50px;
@@ -44,31 +48,37 @@ body{
     row-gap: 5vh;
 }
 
-.title_cont{
+.title_cont {
     display: flex;
     justify-content: space-between;
     align-items: last baseline;
 }
 
-.title{
+.title {
     font-size: 1.5rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.mortage_cont{
+.mortage_cont {
     display: flex;
     flex-direction: column;
     gap: 0.5vh;
-
 }
-.clear_btn{
+
+.clear_btn {
     border: none;
     background-color: transparent;
-    text-decoration:underline;
+    text-decoration: underline;
     color: rgb(118, 118, 118);
 }
 
-.input_cont{
+.input_box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    width: 50%;
+}
+.input_cont {
     border: 1px solid black;
     border-radius: 7px;
     position: relative;
@@ -79,19 +89,19 @@ body{
     background-color: #E3F4FC;
 }
 
-.input_img{
+.input_img {
     height: 100%;
     border-radius: 7px 0 0 7px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 10%; 
+    min-width: 10%;
     color: #4D6571;
     padding-left: 1vw;
     padding-right: 1vw;
 }
 
-.mortage_input{
+.mortage_input {
     width: 100%;
     border: none;
     border-radius: 0 7px 7px 0;
@@ -100,24 +110,25 @@ body{
     appearance: none;
 }
 
-.year_and_interest_cont{
+.year_and_interest_cont {
     display: flex;
     column-gap: 1.5vw;
+    width: 100%;
 }
 
-.reverse_input_img{
+.reverse_input_img {
     height: 100%;
     border-radius: 0 7px 7px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 10%; 
+    min-width: 10%;
     color: #4D6571;
     padding-left: 1vw;
     padding-right: 1vw;
 }
 
-.reverse_mortage_input{
+.reverse_mortage_input {
     width: 100%;
     border: none;
     border-radius: 7px 0 0 7px;
@@ -126,7 +137,7 @@ body{
     appearance: none;
 }
 
-.calculate_btn{
+.calculate_btn {
     border: none;
     background-color: #DBDA30;
     color: #122B25;
@@ -137,19 +148,34 @@ body{
     align-self: center;
 }
 
-.white{
+.white {
     color: #fff;
 }
 
-.repayments_sum_cont{
+.repayments_sum_cont {
     background-color: #0E2431;
     padding: 2vh 1.5vw;
     border-radius: 10px;
     border-top: 2px solid #E3DB38;
 }
 
-#sum{
+#sum {
     color: #E3DB38;
     font-weight: bolder;
     font-size: 3rem;
+}
+
+@media screen and (max-width: 950px) {
+    .main_container {
+        flex-direction: column;
+    }
+
+    .calc_cont {
+        width: 100%;
+    }
+
+    .result_cont {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
 }

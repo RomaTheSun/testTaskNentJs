@@ -16,3 +16,5 @@ function resetCalculator() {
     
     document.getElementById('sum').innerText = '$ 0';
 }
+
+
