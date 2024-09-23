@@ -1,7 +1,12 @@
+document.getElementById('calculate_btn').onclick= function(){calculateMortgage()};
+document.getElementById('clear_btn').onclick= function(){resetCalculator()};
+const month = 12;
+const percentage = 100;
+
 function calculateMortgage() {
-    const mortageAmount = parseFloat(document.getElementById('mortageAmount').value)
-    const mortageTerm = parseFloat(document.getElementById('mortageTerm').value) * 12
-    const interestRate = parseFloat(document.getElementById('interestRate').value) / 100 / 12
+    const mortageAmount = parseFloat(document.getElementById('mortageAmount').value);
+    const mortageTerm = parseFloat(document.getElementById('mortageTerm').value) * month
+    const interestRate = parseFloat(document.getElementById('interestRate').value) / percentage / month
 
     const monthlyPayment = (mortageAmount * interestRate) / (1 - Math.pow(1 + interestRate, -mortageTerm))
 
