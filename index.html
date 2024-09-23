@@ -10,61 +10,53 @@
 
 <body>
     <div class="background">
-        <div class="main_container">
-            <div class="calc_cont">
+        <main class="main_container">
+            <section class="calc_cont">
                 <div class="title_cont">
-                    <div class="title">
+                    <h1 class="title">
                         Mortgage Calculator
-                    </div>
+                    </h1>
                     <input type="reset" value="Clear All" onclick="resetCalculator()" class="clear_btn">
                 </div>
-                <div class="mortage_cont">
-                    <div class="lable">
-                        Mortage Amount
-                    </div>
+                <label class="mortage_cont lable">
+                    Mortage Amount
                     <div class="input_cont">
                         <div class="input_img">$</div>
                         <input class="mortage_input" type="number" id="mortageAmount" />
                     </div>
-                </div>
+                </label>
                 <div class="year_and_interest_cont">
-                    <div class="input_box">
-                        <div class="lable">
-                            Mortage Term
-                        </div>
+                    <lable class="input_box lable">
+                        Mortage Term
                         <div class="input_cont">
                             <input class="reverse_mortage_input" type="number" id="mortageTerm" />
                             <div class="reverse_input_img">years</div>
-
                         </div>
-                    </div>
-                    <div class="input_box">
-                        <div class="lable">
-                            Interest Rate
-                        </div>
+                    </lable>
+                    <lable class="input_box lable">
+                        Interest Rate
                         <div class="input_cont">
                             <input class="reverse_mortage_input" type="number" id="interestRate" step="0.01" />
                             <div class="reverse_input_img">%</div>
-
                         </div>
-                    </div>
+                    </lable>
                 </div>
                 <button class="calculate_btn" onclick="calculateMortgage()">Clalculate</button>
-            </div>
-            <div class="result_cont">
-                <div class="title white">
+            </section>
+            <section class="result_cont">
+                <h2 class="title white">
                     Your results
-                </div>
+                </h2>
                 <div class="repayments_sum_cont">
-                    <div class="lable white">
+                    <span class="lable white">
                         Your mounthly repayments
-                    </div>
+                    </span>
                     <div id="sum">
                         $ 0
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
     <script src="script .js"></script>
 </body>
